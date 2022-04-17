@@ -277,13 +277,14 @@ img {
   margin-bottom: var(--mb-2);
 }
 .home__scroll {
-  /* display: none; */
+  display: none;
+  transition: 0.3s;
 }
 .home__scroll-button {
   color: var(--first-color);
   transition: 0.3s;
 }
-.home__scroll-button:hover {
+.home__scroll:hover {
   transform: translateY(0.25rem);
 }
 .home__scroll-mouse {
@@ -299,7 +300,26 @@ img {
   font-size: 1.25rem;
 }
 /*==================== BUTTONS ====================*/
-
+.button {
+  display: inline-flex;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+.button-icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-25);
+  transition: 0.3s;
+}
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
 /*==================== ABOUT ====================*/
 
 /*==================== SKILLS ====================*/
