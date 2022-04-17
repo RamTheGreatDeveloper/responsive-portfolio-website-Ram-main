@@ -390,6 +390,7 @@ img {
 .skills_list {
   row-gap: 1.5rem;
   padding-left: 2.7rem;
+  transition: .3s;
 }
 .skills_name {
   font-size: var(--normal-font-size);

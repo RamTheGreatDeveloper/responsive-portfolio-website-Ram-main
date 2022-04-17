@@ -34,6 +34,24 @@ nav_link.forEach((n) => n.addEventListener("click", linkAction));
 
 /*==================== ACCORDION SKILLS ====================*/
 
+const skillContent = document.getElementsByClassName("skills_content"),
+  skillHeader = document.querySelectorAll(".skills_header");
+
+function toggleSkills() {
+  let itemClass = this.parentNode.className;
+
+  for (i = 0; i < skillContent.length; i++) {
+    skillContent[i].className = "skills_content skills_close";
+  }
+  if (itemClass === "skills_content skills_close") {
+    this.parentNode.className = "skills_content skills_open";
+  }
+}
+
+skillHeader.forEach((el) => {
+  el.addEventListener("click", toggleSkills);
+});
+
 /*==================== QUALIFICATION TABS ====================*/
 
 /*==================== SERVICES MODAL ====================*/
