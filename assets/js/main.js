@@ -76,9 +76,6 @@ tabs.forEach((tab) => {
     tab.classList.add("qualification_active");
   });
 });
-
-/*==================== SERVICES MODAL ====================*/
-
 /*==================== PORTFOLIO SWIPER  ====================*/
 
 /*==================== TESTIMONIAL ====================*/

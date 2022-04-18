@@ -320,6 +320,30 @@ img {
   display: inline-flex;
   align-items: center;
 }
+
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: #fff;
+}
+
+.button--small {
+  padding: 0.75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
@@ -342,7 +366,7 @@ img {
   color: var(--title-color);
 }
 .about__info-name {
-  font-size: var(--smaller-font-sizel-font-size);
+  font-size: var(--smaller-font-size);
 }
 
 .about__info-title,
@@ -523,12 +547,35 @@ img {
 .qualification_button.qualification_active {
   color: var(--first-color);
 }
-/*==================== SERVICES ====================*/
-
-/* Active Modal */
 
 /*==================== PORTFOLIO ====================*/
 
+.portfolio_container{
+  overflow: initial;
+}
+
+.portfolio_content{
+  padding: 0 1.5rem;
+}
+
+.portfolio_img{
+  width: 265px;
+  border-radius :0.5rem;
+  justify-self: center;
+}
+
+.portfolio_title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description{
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button-icon{
+  transform: translateX(.25rem);
+}
 /*==================== PROJECT IN MIND ====================*/
 
 /*==================== TESTIMONIAL ====================*/
