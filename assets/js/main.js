@@ -89,8 +89,6 @@ let swiper = new Swiper(".portfolio_container", {
   mousewheel: true,
   keyboard: true,
 });
-/*==================== TESTIMONIAL ====================*/
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
