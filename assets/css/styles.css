@@ -344,11 +344,13 @@ img {
 .about__info-name {
   font-size: var(--smaller-font-sizel-font-size);
 }
+
 .about__info-title,
 .about__info-name {
   display: block;
   text-align: center;
 }
+
 .about__button {
   display: flex;
   justify-content: center;
@@ -357,6 +359,7 @@ img {
 .skills_container {
   row-gap: 0;
 }
+
 .skills_header {
   display: flex;
   align-items: center;
@@ -369,38 +372,47 @@ img {
   font-size: 2rem;
   color: var(--first-color);
 }
+
 .skills_icon {
   margin-right: var(--mb-0-75);
 }
+
 .skills__title {
   font-size: var(--h3-font-size);
 }
+
 .skills__subtitle {
   font-size: var(--small-font-size);
 }
+
 .skills_down {
   margin-left: auto;
   transition: 0.4s;
 }
+
 .skills_titles {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
 }
+
 .skills_list {
   row-gap: 1.5rem;
   padding-left: 2.7rem;
-  transition: .3s;
+  transition: 0.3s;
 }
+
 .skills_name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
+
 .skills_percentage,
 .skills_bar {
   height: 5px;
   border-radius: 0.25rem;
 }
+
 .skills_bar {
   background-color: var(--first-color-lighter);
 }
@@ -424,9 +436,11 @@ img {
 .skills-scss {
   width: 30%;
 }
+
 .skills-sql {
   width: 75%;
 }
+
 .skills_close .skills_list {
   height: 0;
   overflow: hidden;
@@ -436,11 +450,76 @@ img {
   height: max-content;
   margin-bottom: var(--mb-2-5);
 }
+
 .skills_open .skills_down {
   transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
+.qualification_tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
 
+.qualification_button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification_button:hover {
+  color: var(--first-color);
+}
+
+.qualification_icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification_data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification_subtitle{
+  display:inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification_calender{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.qualification_rounder{
+  display:inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification_line{
+  display: block;
+  width: 1px;
+  height:100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content]{
+  display: none;
+}
+.qualification_active[data-content]{
+  display: block;
+}
 /*==================== SERVICES ====================*/
 
 /* Active Modal */
