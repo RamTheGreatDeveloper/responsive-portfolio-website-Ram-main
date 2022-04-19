@@ -229,9 +229,13 @@ img {
   bottom: 0;
 }
 /* Active link */
-
+.active_link {
+  color: var(--first-color);
+}
 /* Change background header */
-
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
 /*==================== HOME ====================*/
 .home__container {
   gap: 1rem;
@@ -666,7 +670,6 @@ img {
 .footer_bg {
   background-color: var(--first-color-second);
   padding: 2rem 0 3rem;
- 
 }
 
 .footer_title {
@@ -697,8 +700,11 @@ img {
   color: var(--first-color-lighter);
 }
 
-.footer_link,.footer_social,.footer_title,.footer_subtitle{
-  color:#fff;
+.footer_link,
+.footer_social,
+.footer_title,
+.footer_subtitle {
+  color: #fff;
 }
 /*========== SCROLL UP ==========*/
 
